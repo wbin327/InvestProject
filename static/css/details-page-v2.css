@@ -1,0 +1,126 @@
+body{
+    overflow: hidden;
+}
+.main-content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /*background: url(../images/details-page-images/background.jpg) no-repeat;*/
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+.image-box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.image-box img{
+    display: block;
+    height: 4.89rem;
+    width: 14.13rem;
+}
+.return-ico{
+    position: absolute;
+    top: 0.645rem;
+    left: 1rem;
+    height: 0.27rem;
+    width: 0.15rem;
+}
+.return-ico img{
+    display: block;
+    height: 0.27rem;
+    width: 0.15rem;
+}
+.left-button{
+    position: absolute;
+    top: 4.15rem;
+    left: 4rem;
+}
+.left-button img{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.left-button img:hover{
+    cursor: pointer;
+}
+.right-button{
+    position: absolute;
+    top: 4.15rem;
+    right: 4rem;
+}
+.right-button img{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.right-button img:hover{
+    cursor: pointer;
+}
+.open-sidebar-ico{
+    height: 0.2rem;
+    width: 0.4rem;
+    position: absolute;
+    top: 0.645rem;
+    right: 0.5rem;
+}
+.open-sidebar-ico img{
+    display: block;
+    height: 0.2rem;
+    width: 0.4rem;
+}
+.return-ico{
+    cursor: pointer;
+}
+
+/*全屏幕布*/
+.black-screen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    text-align: center;
+}
+.black-screen .main-img{
+    height: 100%;
+    width: auto;
+}
+.black-screen .left-box{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0.5rem;
+    /*background: rgba(255, 255, 255, 0.3);*/
+    background: #000;
+    cursor: pointer;
+}
+.black-screen .left-box img{
+    position: relative;
+    top: 40%;
+    width: 30%;
+    height: auto;
+}
+.black-screen .right-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 0.5rem;
+    background: #000;
+    cursor: pointer;
+}
+.black-screen .right-box img{
+    position: relative;
+    top: 40%;
+    width: 30%;
+    height: auto;
+}

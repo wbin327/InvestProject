@@ -1,0 +1,244 @@
+body{
+    overflow: hidden;
+    /*background: url(../images/index-images/background.jpg);*/
+    /*background-size:cover;*/
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.background-image{
+    height: 10.8rem;
+    width: 19.2rem;
+}
+.background-image img{
+    width: 100%;
+    height: 100%;
+}
+/*
+页面中间部分，公司信息以及项目介绍
+ */
+.company{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.company-logo{
+    width: 100%;
+    padding-top: 1.3rem;
+    padding-bottom: 0.552rem;
+}
+.company-logo img{
+    height: 2.69rem;
+    width: 5.31rem;
+}
+.project-msg{
+    width: 100%;
+}
+.project-msg img{
+    height: 2.02rem;
+    width: 5.59rem;
+    z-index: 1;
+}
+.video-ico{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 0.3rem;
+}
+.video-ico img{
+    width: 0.85rem;
+    max-width: 85px;
+    height: 0.26rem;
+    max-height: 26px;
+    z-index: 1;
+    display:block;
+
+    /* 水平居中 */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.video-ico:hover{
+    cursor:pointer;
+}
+
+/*底部导航栏*/
+.footer-navigation{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 1.58rem;
+    max-height: 158px;
+    width: 100%;
+}
+.footer-navigation img{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.footer-navigation-content{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 1.58rem;
+    max-height: 158px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.18rem;
+    display: flex;
+    display: -webkit-flex;
+    align-items:center;
+    justify-content:center;
+}
+.footer-navigation-content a{
+    height: 100%;
+    width: 25%;
+    max-width: 480px;
+    text-align: center;
+    display: flex;
+    display: -webkit-flex;
+    align-items:center;
+    justify-content:center;
+    /* 盒子模型，防止添加了边框后高度改变 */
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    color: #fff;
+    /*font-family: STSong;*/
+}
+.footer-navigation-content a:hover{
+    /* 下面实现鼠标滑动效果 */
+    background: rgba(30, 77, 119, 0.7);
+    cursor:pointer;
+    border-bottom: 8px solid #163f63;
+    /*color: #fff;*/
+}
+.footer-navigation-content-group{
+    height: auto;
+    width: 100%;
+    /* 使用table-cell实现垂直居中 */
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+}
+.footer-navigation-content .footer-navigation-content-group img{
+    width: auto;
+    height: 35%;
+    max-height: 30px;
+    z-index: 2;
+}
+
+.footer-navigation-content-word{
+    margin-top: 0.18rem;
+}
+
+/* 视频播放 */
+.video-group{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    z-index: 4;
+}
+.video-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.video-close{
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+}
+.video-close img{
+    width: 0.28rem;
+    height: 0.28rem;
+}
+.video-close:hover{
+    cursor:pointer;
+}
+
+/* 页面右侧侧边栏 */
+.right-sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 32.81%;
+}
+.main-sidebar{
+    width: 52.54%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #232323;
+}
+.sidebar-close{
+    /*height: auto;*/
+    /*width: 10.3%;*/
+    /*position: absolute;*/
+    /*top: 2.78%;*/
+    /*right: 10%;*/
+    padding: 2.78% 9%;
+    text-align: right;
+}
+.sidebar-close img{
+    width: 10.3%;
+    height: auto;
+}
+.sidebar-close img:hover{
+    cursor:pointer;
+}
+.sidebar-logo{
+    padding-top: 30%;
+    padding-bottom: 20%;
+    width: 100%;
+    text-align: center;
+}
+.sidebar-logo img{
+    height: 4%;
+    width: 70%;
+}
+.main-sidebar-button{
+    width: 100%;
+    height: 7.4%;
+    color: #fff;
+    text-align: center;
+    background: #434343;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-sidebar-button:hover{
+    background: #232323;
+    cursor:pointer;
+}
+.secondary-sidebar{
+    width: 47.4%;
+    height: 100%;
+    background: rgba(35, 35, 35, 0.8);
+    color: #ffffff;
+}
+.secondary-button-group{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.secondary-button{
+    padding: 3.5% 0;
+}
+.secondary-button:hover{
+    text-decoration: underline;
+}

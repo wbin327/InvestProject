@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情页V2</title>
+
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/details-page-v2.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
+    <!-- 计算body字体大小，在宽度为1920的环境下，字体大小为100px -->
+    <script src="../static/js/calculation-font-size.js"></script>
+    <!-- 引入前端模板渲染doT.js -->
+    <script src="../static/js/doT.js"></script>
+</head>
+<body>
+
+<!-- 页面背景图片 -->
+<div class="background-image">
+    <!--    <img src="./static/images/index-images/background.jpg">-->
+</div>
+
+<div class="main-content">
+    <div class="return-ico">
+        <img src="../static/images/details-page-images/return-ico.png">
+    </div>
+<!--    <div class="open-sidebar-ico">-->
+<!--        <img src="../static/images/index-images/right-sidebar-ico.png">-->
+<!--    </div>-->
+    <div class="image-box">
+        <img src="../static/images/details-page-images/presentation-images/master-plan2.png">
+    </div>
+    <div class="left-button">
+        <img src="../static/images/details-page-images/leftico.png">
+    </div>
+    <div class="right-button">
+        <img src="../static/images/details-page-images/rightico.png">
+    </div>
+</div>
+
+<!-- 侧边栏 -->
+<div class="right-sidebar-component"></div>
+
+<!-- 全屏幕布 -->
+<div class="black-screen" style="visibility: hidden">
+    <img class="main-img" src = "../static/images/details-page-images/presentation-images/master-plan2.png">
+    <div class="left-box">
+        <img src="../static/images/details-page-images/left_ico.png" style="visibility: hidden">
+    </div>
+    <div class="right-box">
+        <img src="../static/images/details-page-images/right_ico.png" style="visibility: hidden">
+    </div>
+</div>
+
+<!-- 引入全局配置文件 -->
+<script src="../static/js/config.js"></script>
+<!-- 引入JS工具类方法 -->
+<script src="../static/js/util.js"></script>
+<!-- 侧边栏JS，会自动往<div class="right-sidebar-component"></div>中填充内容 -->
+<script src="../static/component/right-sidebar-v2/right-sidebar-v2.js"></script>
+<script src="../static/js/details-page-v2.js"></script>
+</body>
+</html>
