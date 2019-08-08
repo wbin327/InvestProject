@@ -3,7 +3,8 @@
 // let baseUrl = '/'
 // let baseUrl = 'http://114.215.188.153:8100/'
 // let baseUrl = '/InvestProject/'
-let baseUrl = 'http://10.5.2.54:8001/'
+// let baseUrl = 'http://10.5.2.54:8001/'
+let baseUrl = 'http://114.215.188.153:8001/'
 let requestUrl = 'http://localhost:8088/'
 
 // 详情页图片请求路径配置
