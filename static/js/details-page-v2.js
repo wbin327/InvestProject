@@ -76,6 +76,5 @@ $(document).ready(function () {
 
 // 返回按钮
 $(".return-ico").click(function () {
-    let projectId = getUrlPara('projectId');
-    window.location.href =  projectId ? `${linkTree[0]}?projectId=${projectId}` : `${linkTree[0]}`
+    window.location.href =  getUrlPara('projectId') ? `${linkTree[0]}?projectId=${projectId}` : `${linkTree[0]}`
 })

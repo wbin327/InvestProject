@@ -71,7 +71,7 @@ function getSetData(){
         })
     }else{
         data = user_data.format({'baseUrl': baseUrl});
-        data = constructionLink(data, projectId);
+        data = constructionLink(data);
     }
     // 保存数据到sessionStorage中,key-value形式
     sessionStorage.setItem("user_data", data);
@@ -87,7 +87,11 @@ function constructionLink(jsonStr, projectId) {
         // 将所有图片放入imageList集合中
         if('imagesPath' in jsonData.types[i]){
             // 顶级类别的链接，格式如下"link": "{baseUrl}/details-page/details-page-v2.html?typeIndex=设计成果&image_index=0&projectId",
-            jsonData.types[i]['link'] = `${baseUrl}/details-page.html?typeIndex=${i}&projectId=${projectId}&image_index=0`
+            if(projectId){
+                jsonData.types[i]['link'] = `${baseUrl}/details-page.html?typeIndex=${i}&projectId=${projectId}&image_index=0`
+            }else{
+                jsonData.types[i]['link'] = `${baseUrl}/details-page.html?typeIndex=${i}&image_index=0`
+            }
             for(let j=0; j<jsonData.types[i].imagesPath.length; j++){
                 typeImageList.push(jsonData.types[i].imagesPath[j]);
             }
