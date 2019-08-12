@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情页</title>
+
+    <!-- 消除浏览器默认样式 -->
+    <link rel="stylesheet" href="./static/css/normalize.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- 计算body字体大小，在宽度为1920的环境下，字体大小为100px -->
+    <script src="./static/js/calculation-font-size.js"></script>
+    <!-- 引入前端模板渲染template.js -->
+    <script src="./static/js/doT.js"></script>
+    <style type="text/css">
+        body{
+            overflow: hidden;
+        }
+        .background-image{
+            z-index: 0;
+        }
+        .content-box{
+            position: absolute;
+            top: 20%;
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            z-index: 1;
+            text-align: center;
+        }
+        .content-box img{
+            width: 635px;
+            height: auto;
+        }
+        .return-ico{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            height: 50px;
+            width: 30px;
+            z-index: 1;
+        }
+        .return-ico img{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="return-ico">
+    <img src="./static/images/details-page-images/return-ico.png">
+</div>
+
+<!-- 页面背景图片 -->
+<div class="background-image">
+    <img src="./static/images/details-page-images/background-phone.png">
+</div>
+
+<!-- 页面中间文字部分内容 -->
+<div class="content-box">
+    <img src="./static/images/details-page-images/1-phone.png">
+</div>
+
+
+
+<!-- 侧边栏 -->
+<div class="right-sidebar-component"></div>
+
+<!-- 引入全局配置文件 -->
+<script src="./static/js/config.js"></script>
+<!-- 引入JS工具类方法 -->
+<script src="./static/js/util.js"></script>
+<!-- 侧边栏JS，修改成在index-v2.js中引用，解决数据没有请求成功，就加载侧边栏的情况，导致无法正常加载侧边栏 -->
+<!--<script src="./static/component/right-sidebar-v2/right-sidebar-v2.js"></script>-->
+<script src="./static/js/details-page-phone.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+body{
+    overflow: hidden;
+}
+.background-image img{
+    /*z-index: 0;*/
+}
+.company{
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    height: 30%;
+    z-index: 1;
+    padding: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.company img{
+    height: 100%;
+    width: 100%;
+}
+
+.footer-navigation{
+    background: #2772B6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footer-navigation .navigation-box{
+    padding: 10px;
+    height: 50%;
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.footer-navigation .navigation-box .content-group{
+    background: rgba(30, 77, 119, 0.6);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    display: -webkit-flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+}
+.footer-navigation .navigation-box .content-group img{
+    height: 70px;
+    width: auto;
+    margin-bottom: 20px;
+}

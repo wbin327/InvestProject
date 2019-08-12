@@ -37,6 +37,8 @@ let user_data =
 
 // 页面加载时执行的方法
 $("document").ready(function () {
+    // 判断是否需要跳转到手机端
+    isPhone();
     let data = getSetData();
     data = JSON.parse(data);
     render_main(data);
@@ -45,6 +47,13 @@ $("document").ready(function () {
     // 加载侧边栏JS渲染页面，解决数据没有请求成功，就加载侧边栏的情况，导致无法正常加载侧边栏
     $.getScript(`${baseUrl}/static/component/right-sidebar-v2/right-sidebar-v2.js`)
 })
+// 判断是否需要跳转到手机端页面
+function isPhone() {
+    if(!isPC()){
+        let url = `${baseUrl}/index-phone.html`;
+        window.location.href = url;
+    }
+}
 // 每次打开首页时，向后台发送请求，获取用户的数据并保存到浏览器本地数据中，以供列表页和详情页使用
 function getSetData(){
     let projectId = getUrlPara('projectId');
