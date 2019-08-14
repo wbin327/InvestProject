@@ -3,6 +3,7 @@
 // let baseUrl = '/'
 // let baseUrl = 'http://114.215.188.153:8100/'
 let baseUrl = '/InvestProject/'
+let host = 'http://arcc.com.cn:8001'
 // let baseUrl = 'http://10.5.2.54:8001/'
 // let baseUrl = 'http://114.215.188.153:8001/'
 let requestUrl = 'http://localhost:8088/'

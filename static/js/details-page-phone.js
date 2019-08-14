@@ -1,8 +1,8 @@
 image_list = [
-    `${baseUrl}/static/images/details-page-images/1-phone.png`,
-    `${baseUrl}/static/images/details-page-images/2-phone.png`,
-    `${baseUrl}/static/images/details-page-images/3-phone.png`,
-    `${baseUrl}/static/images/details-page-images/4-phone.png`,
+    `${host}/static/images/details-page-images/1-phone.png`,
+    `${host}/static/images/details-page-images/2-phone.png`,
+    `${host}/static/images/details-page-images/3-phone.png`,
+    `${host}/static/images/details-page-images/4-phone.png`,
 ]
 
 // 动态修改背景图片
@@ -30,6 +30,6 @@ function setImg(){
 }
 
 $(".return-ico").click(function () {
-    let url = `${baseUrl}/index-phone.html`;
+    let url = `${host}/index-phone.html`;
     window.location.href = url;
 })

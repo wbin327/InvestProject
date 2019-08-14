@@ -18,14 +18,14 @@ $("document").ready(function () {
 // 判断是否需要跳转到手机端页面
 function isPhone() {
     if(isPC()){
-        let url = `${baseUrl}/index.html`;
+        let url = `${host}/index.html`;
         window.location.href = url;
     }
 }
 
 $(".content-group").click(function () {
     let index = parseInt(this.getAttribute("index"));
-    let url = `${baseUrl}/details-page-phone.html?index=${index}`;
+    let url = `${host}/details-page-phone.html?index=${index}`;
     window.location.href = url;
 })
 
@@ -94,7 +94,7 @@ function wechatShare(){
                 wx.ready(function () {
                     const title = '宏易资本集团';
                     const desc = '深圳市中科宏易创业投资管理有限公司 | 深圳市本源晶鸿基金管理有限公司';
-                    const imgUrl = `${baseUrl}/static/images/share.png`;
+                    const imgUrl = `${host}/static/images/share.png`;
                     // 分享给好友
                     // wx.updateAppMessageShareData({
                     //     title: title, // 分享标题
