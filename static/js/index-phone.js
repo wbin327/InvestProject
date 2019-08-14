@@ -94,7 +94,7 @@ function wechatShare(){
                 wx.ready(function () {
                     const title = '宏易资本集团';
                     const desc = '深圳市中科宏易创业投资管理有限公司 | 深圳市本源晶鸿基金管理有限公司';
-                    const imgUrl = `${host}/static/images/share.png`;
+                    const imgUrl = `${baseUrl}/static/images/share.png`;
                     // 分享给好友
                     // wx.updateAppMessageShareData({
                     //     title: title, // 分享标题
@@ -124,14 +124,14 @@ function wechatShare(){
                         link: url, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
                         imgUrl: imgUrl, // 分享图标
                         type: 'link', // 分享类型,music、video或link，不填默认为link
-                        dataUrl: '' // 如果type是music或video，则要提供数据链接，默认为空
                     });
                     // 朋友圈
                     wx.onMenuShareTimeline({
                         title: title, // 分享标题
                         desc: desc, // 分享描述
                         link: url, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
-                        imgUrl: imgUrl // 分享图标
+                        imgUrl: imgUrl, // 分享图标
+                        type: 'link', // 分享类型,music、video或link，不填默认为link
                     });
                 })
             }
