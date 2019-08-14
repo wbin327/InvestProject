@@ -95,29 +95,43 @@ function wechatShare(){
                     const title = '宏易资本集团';
                     const desc = '宏易资本集团';
                     const imgUrl = `${baseUrl}/static/images/share.png`;
-
                     // 分享给好友
-                    wx.updateAppMessageShareData({
+                    // wx.updateAppMessageShareData({
+                    //     title: title, // 分享标题
+                    //     desc: desc, // 分享描述
+                    //     link: location.href.split('#')[0], // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+                    //     imgUrl: imgUrl, // 分享图标
+                    //     success: function () {
+                    //         // 设置成功
+                    //         // console.log("分享给好友成功")
+                    //     }
+                    // })
+                    // 分享到朋友圈
+                    // wx.updateTimelineShareData({
+                    //     title: title, // 分享标题
+                    //     desc: desc,
+                    //     link: location.href.split('#')[0],
+                    //     imgUrl: imgUrl, // 分享图标
+                    //     success: function () {
+                    //         // 设置成功
+                    //         // console.log("分享到朋友圈成功")
+                    //     }
+                    // })
+                    // 微信好友
+                    wx.onMenuShareAppMessage({
                         title: title, // 分享标题
                         desc: desc, // 分享描述
-                        link: location.href.split('#')[0], // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+                        link: url, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
                         imgUrl: imgUrl, // 分享图标
-                        success: function () {
-                            // 设置成功
-                            console.log("分享给好友成功")
-                        }
-                    })
-                    // 分享到朋友圈
-                    wx.updateTimelineShareData({
+                        type: 'link', // 分享类型,music、video或link，不填默认为link
+                        dataUrl: '' // 如果type是music或video，则要提供数据链接，默认为空
+                    });
+                    // 朋友圈
+                    wx.onMenuShareTimeline({
                         title: title, // 分享标题
-                        desc: desc,
-                        link: location.href.split('#')[0],
-                        imgUrl: imgUrl, // 分享图标
-                        success: function () {
-                            // 设置成功
-                            console.log("分享到朋友圈成功")
-                        }
-                    })
+                        link: url, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+                        imgUrl: imgUrl // 分享图标
+                    });
                 })
             }
         },
