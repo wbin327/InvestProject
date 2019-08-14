@@ -10,7 +10,6 @@ function setBgImgWidthHeight(){
 window.onresize = setBgImgWidthHeight
 
 $("document").ready(function () {
-    debugger
     wechatShare()
     isPhone();
     setBgImgWidthHeight();
@@ -79,7 +78,7 @@ function wechatShare(){
     // })
     $.ajax({
         type: "GET",
-        url: "http://127.0.0.1:5000/getWeChatToken?url=" + encodeURIComponent(url),
+        url: "http://114.215.188.153:5000/getWeChatToken?url=" + encodeURIComponent(url),
         dataType: "json",
         success: function (res) {
             if(res.code === 200){
