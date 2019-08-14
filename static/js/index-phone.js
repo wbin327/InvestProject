@@ -10,6 +10,7 @@ function setBgImgWidthHeight(){
 window.onresize = setBgImgWidthHeight
 
 $("document").ready(function () {
+    wechatShare()
     isPhone();
     setBgImgWidthHeight();
 })
@@ -62,7 +63,7 @@ function wechatShare(){
                 // 分享到朋友圈
                 wx.updateTimelineShareData({
                     title: title, // 分享标题
-                    link: desc, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+                    desc: desc,
                     link: location.href.split('#')[0],
                     imgUrl: imgUrl, // 分享图标
                     success: function () {
